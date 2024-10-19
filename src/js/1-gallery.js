@@ -88,12 +88,17 @@ gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   animationSpeed: 300,
   overlay: true,
-  overlayOpacity: 0.7,
-  overlayColor: '#2E2F42',
-  overlayBackground: '#2E2F42',
+  overlayOpacity: 0.2
 });
+
+let originalBgColor;
+const body = document.querySelector('body');
 
 gallery.on('show.simplelightbox', function () {
+  originalBgColor = body.style.backgroundColor;
+  body.style.backgroundColor = ' #2E2F42';
 });
 
-
+gallery.on('closed.simplelightbox', function () {
+  body.style.backgroundColor = originalBgColor;
+});
