@@ -2,5 +2,5 @@ import"./assets/modulepreload-polyfill-B5Qt9EMX.js";/* empty css                
   <a class="gallery-link" href="${p}">
     <img class="gallery-image" src="${t}" alt="${e}" />
   </a>
-</li>`,l=()=>c.map(t=>r(t)).join("");let o=document.querySelector(".gallery");o.innerHTML=l();o=new n(".gallery a",{captions:!0,captionsData:"alt",captionDelay:250,animationSpeed:300,overlay:!0,overlayOpacity:.2});let a;const i=document.querySelector("body");o.on("show.simplelightbox",function(){a=i.style.backgroundColor,i.style.backgroundColor=" #2E2F42"});o.on("closed.simplelightbox",function(){i.style.backgroundColor=a});
+</li>`,l=()=>c.map(t=>r(t)).join("");let o=document.querySelector(".gallery");o.innerHTML=l();o=new n(".gallery a",{captions:!0,captionsData:"alt",captionDelay:250,animationSpeed:300,overlay:!0,overlayOpacity:.5});let a;const i=document.querySelector("body");o.on("show.simplelightbox",function(){a=i.style.backgroundColor,i.style.backgroundColor=" #2E2F42"});o.on("closed.simplelightbox",function(){i.style.backgroundColor=a});
 //# sourceMappingURL=1-gallery.js.map
