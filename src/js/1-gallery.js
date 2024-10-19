@@ -88,7 +88,7 @@ gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   animationSpeed: 300,
   overlay: true,
-  overlayOpacity: 0.2
+  overlayOpacity: 0.5
 });
 
 let originalBgColor;
