@@ -11,7 +11,6 @@ form.addEventListener('input', event => {
 
   const { name, value } = event.target;
   formData[name] = value;
-  console.log('name - ' + name + ' value - ' + value);
 
   localStorage.setItem(formKey, JSON.stringify(formData));
 });
