@@ -10,7 +10,7 @@ form.addEventListener('input', event => {
   event.preventDefault();
 
   const { name, value } = event.target;
-  formData[name] = value;
+  formData[name] = value.trim();
 
   localStorage.setItem(formKey, JSON.stringify(formData));
 });
