@@ -1,4 +1,4 @@
-const formData = {
+let formData = {
   email: "",
   message: ""
 }
@@ -11,6 +11,7 @@ form.addEventListener('input', event => {
 
   const { name, value } = event.target;
   formData[name] = value;
+  console.log('name - ' + name + ' value - ' + value);
 
   localStorage.setItem(formKey, JSON.stringify(formData));
 });
@@ -46,5 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.elements.email.value = email;
     form.elements.message.value = message;
+    formData = { email, message };
   }
 });
