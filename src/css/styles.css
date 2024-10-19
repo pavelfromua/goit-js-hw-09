@@ -12,7 +12,42 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
+/*@import url('./vite-promo.css');*/
+/*@import url('./badges.css');*/
 @import url('./back-link.css');
-@import url('./footer.css');
+/*@import url('./footer.css');*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  list-style: none;
+  max-width: calc((100% - 48px) / 3);
+  width: 100%;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.044);
+}
+
+.simple-lightbox {
+  cursor: zoom-out;
+}
+
